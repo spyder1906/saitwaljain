@@ -443,7 +443,7 @@ button {
 .top-content-wrap ul li a {
   display: inline-block;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
 }
 .top-content-wrap ul li i {
   color: #fff;
@@ -457,7 +457,7 @@ button {
   color: #fff;
   line-height: 25px;
   display: block;
-  font-size: 12px;
+  font-size: 15px;
 }
 .top-content-wrap .right-info li:last-child {
   margin-right: 0;
@@ -470,6 +470,7 @@ button {
 .bottom-content-wrap {
   display: flex;
   align-items: center;
+  height: 115px;
 }
 #mainmenu {
   display: inline-block;
@@ -486,7 +487,7 @@ button {
   font-weight: 500;
   padding: 30px 0;
   display: inline-block;
-  font-size: 16px;
+  font-size: 17px;
 }
 #mainmenu li a:hover {
   color: #f8b864;
