@@ -495,7 +495,7 @@ button {
 /*Dropdown */
 #mainmenu li ul {
   background-color: #fff;
-  width: 200px;
+  width: max-content;
   height: auto;
   position: absolute;
   left: 0;
@@ -638,7 +638,7 @@ button {
 .nivo-caption {
   height: 100%;
   opacity: 1;
-  background: transparent;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   overflow: visible;
 }
 
@@ -2140,4 +2140,16 @@ span.date {
 #scroll-to-top:hover {
   background-color: #ffb451;
   color: #fff;
+}
+
+.fs-20 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+}
+
+.fs-30 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #222;
 }
