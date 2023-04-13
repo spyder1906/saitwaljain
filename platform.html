@@ -197,7 +197,10 @@
         <div class="row about-wrap">
           <div class="col-md-6 xs-padding">
             <div class="about-image">
-              <img src="img/about.jpg" alt="about image" />
+              <img
+                src="https://cdn.pixabay.com/photo/2019/05/11/17/35/mosque-4196145_960_720.jpg"
+                alt="about image"
+              />
             </div>
           </div>
           <div class="col-md-6 xs-padding">
@@ -221,7 +224,7 @@
       </div>
     </section>
 
-    <section id="history-section">
+    <section id="history-section" id="Educational">
       <div class="container">
         <div class="row py-5">
           <div class="col-md-12">
@@ -262,12 +265,12 @@
       </div>
     </section>
 
-    <section id="history-section">
+    <section class="contact-section padding" id="Career">
       <div class="container">
-        <div class="row py-3">
-          <div class="col-md-12">
-            <div class="about-content">
-              <h2>Employment support</h2>
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding">
+            <div class="contact-info">
+              <h3>Employment support</h3>
               <p>
                 At our organization, we recognize that education is the
                 foundation for success, and we are committed to providing our
@@ -297,6 +300,1069 @@
                 achieve their professional goals, and we are committed to
                 helping our community members do just that.
               </p>
+            </div>
+          </div>
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <h3>Job Seekers</h3>
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="pim"
+                      name="pin"
+                      class="form-control"
+                      placeholder="Pincode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="postalAddress"
+                      name="postalAddress"
+                      class="form-control"
+                      placeholder="Postal Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <h3>For employers</h3>
+              <p>
+                If you have any job opening, please fill the form below and our
+                team will get back to you with the relevant profiles from our
+                jain Saitwal community.
+              </p>
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="companyName"
+                      name="companyName"
+                      class="form-control"
+                      placeholder="Company  Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="contactName"
+                      name="contactName"
+                      class="form-control"
+                      placeholder="Contact Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-4">
+                    <input
+                      type="text"
+                      id="jobPosting"
+                      name="jobPosting"
+                      class="form-control"
+                      placeholder="Job Posting "
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-4">
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-4">
+                    <input
+                      type="text"
+                      id="pim"
+                      name="pin"
+                      class="form-control"
+                      placeholder="Pincode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="companyAddress"
+                      name="companyAddress"
+                      class="form-control"
+                      placeholder="Company Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section padding" id="Entrepreneurs">
+      <div class="container">
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <h3>For Entrepreneurs</h3>
+              <p>
+                If you are looking for any specific programs, please fill in the
+                form.
+              </p>
+              <p>What help you need</p>
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="pim"
+                      name="pin"
+                      class="form-control"
+                      placeholder="Pincode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="postalAddress"
+                      name="postalAddress"
+                      class="form-control"
+                      placeholder="Postal Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section padding" id="Business">
+      <div class="container">
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <h3>
+                Business Directory ( Form for entry ) – Saitwal economy growth
+              </h3>
+              <p>
+                Subscribe for business directory register, Enter your details
+                here
+              </p>
+              <p>
+                --for business directory updates, please fill in the form below.
+              </p>
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="companyName"
+                      name="companyName"
+                      class="form-control"
+                      placeholder="Company  Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="contactName"
+                      name="contactName"
+                      class="form-control"
+                      placeholder="Contact Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="companyAddress"
+                      name="companyAddress"
+                      class="form-control"
+                      placeholder="Company Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section padding" id="Arts">
+      <div class="container">
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding">
+            <div class="contact-info">
+              <h3>Arts & Culture</h3>
+              <p>
+                At our organization, we believe that the arts play a vital role
+                in promoting and preserving cultural heritage, fostering
+                creativity and innovation, and bringing people together. Our
+                program is designed to celebrate and showcase the diverse
+                cultural traditions of our community, while also providing
+                opportunities for individuals to explore their own creativity.
+              </p>
+              <p>
+                Through our Arts and Culture program, we offer a range of
+                events, workshops, and performances that showcase the rich
+                artistic traditions of our community, including music, dance,
+                theater, literature, and visual arts. We also provide support
+                and resources for artists and creatives in our community,
+                including mentorship.
+              </p>
+              <p>
+                Our program is open to all members of the community, regardless
+                of age. Whether you are a seasoned artist or a beginner, we
+                welcome you to join us and explore your creativity.
+              </p>
+              <p>
+                So come and join us in celebrating the arts and culture of our
+                community! We look forward to seeing you at our upcoming events
+                and workshops.
+              </p>
+              <p>
+                For further details please contact Mr. Arvind Mukhedkar. Contact
+                - +91 9869620587
+              </p>
+            </div>
+            <div class="contact-info mt-4" id="Mentoring">
+              <h3>Mentoring</h3>
+              <p>
+                At our organization, we recognize that education is the
+                foundation for success, and we are committed to providing our
+                community members with the resources and guidance they need to
+                achieve their professional goals. That is why we have
+                established a Career Guidance Cell, a dedicated program aimed at
+                providing career guidance and support to our community members.
+              </p>
+              <p>
+                The Career Guidance Cell is designed to help individuals at
+                every stage of their professional journey, from choosing the
+                right educational path to finding meaningful employment. Our
+                team of experienced professional’s works with community members
+                to assess their skills and interests, identify potential career
+                paths, and provide guidance on the education and training needed
+                to pursue those paths.
+              </p>
+              <p>
+                Our program is open to all members of the community, regardless
+                of age. Whether you are a seasoned artist or a beginner, we
+                welcome you to join us and explore your creativity.
+              </p>
+              <p>
+                We offer a range of services and resources, including workshops
+                on resume writing, job searching, and interviewing skills, as
+                well as one-on-one career counseling sessions. Our goal is to
+                equip our community members with the tools and knowledge they
+                need to succeed in their chosen careers.
+              </p>
+              <p>
+                We believe that with the right guidance and support, anyone can
+                achieve their professional goals, and we are committed to
+                helping our community members do just that.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <h3>Job Seekers</h3>
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="pim"
+                      name="pin"
+                      class="form-control"
+                      placeholder="Pincode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="postalAddress"
+                      name="postalAddress"
+                      class="form-control"
+                      placeholder="Postal Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section padding" id="Women">
+      <div class="container">
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding">
+            <div class="contact-info">
+              <h3>Women Empowerment</h3>
+              <p>
+                Women’s empowerment is not merely about helping women, it is
+                about building a more robust, stable and powerful community.
+                Empowering women to participate fully in economic and Spiritual
+                aspect of life is essential for Saitwal community sustainable
+                development.
+              </p>
+              <p>
+                While we have programs across all the platform initiatives, and
+                we believe in equality, we want to open the platform for larger
+                reach where we can gather views, ideas from our Saitwal Bhagini.
+              </p>
+              <p>
+                Please share your ideas/ additional support that you are looking
+                forward to :
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="pim"
+                      name="pin"
+                      class="form-control"
+                      placeholder="Pincode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="postalAddress"
+                      name="postalAddress"
+                      class="form-control"
+                      placeholder="Postal Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section padding" id="Research">
+      <div class="container">
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding">
+            <div class="contact-info">
+              <h3>Research and Blogs</h3>
+              <p>
+                In our community, we have many learned people. Some of them are
+                interested in deep research. We want our community to get
+                benefited by them.
+              </p>
+              <p>
+                Pls share your about your research / blog/ idea that you want us
+                to publish here. Team will get back to you. Please enter your
+                contacts
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="pim"
+                      name="pin"
+                      class="form-control"
+                      placeholder="Pincode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="postalAddress"
+                      name="postalAddress"
+                      class="form-control"
+                      placeholder="Postal Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section padding" id="Online">
+      <div class="container">
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding">
+            <div class="contact-info">
+              <h3>Jain Pathshala</h3>
+              <p>
+                We have been investing in religious education, training the next
+                generation. While in many places, Jain young people most often
+                live in religiously saturated environments, allowing them to
+                acquire knowledge of their religion through daily life by
+                interacting with the monks, temples, texts, and people that
+                surround them. However, due to urbanisation, not all get the
+                same advantage. Here Jains are spread too thinly to provide
+                young people with the Jain environment necessary to sustain such
+                education by osmosis. In addition, the assurance of accessible
+                resources is replaced by the formidable barriers of social media
+                distraction.
+              </p>
+              <p>
+                What do the teachers, who are almost always parents, feel is
+                important to pass on? What role do culture and language play in
+                religious education? How does the pathshala balance elements
+                such as ritual and philosophy? How can it help children to apply
+                a Jain perspective to daily life? How can children learn reading
+                Jinwani and so on.
+              </p>
+              <p>
+                For your specific needs, or if you are interested in starting a
+                pathshala, please get in touch with us and we will set up a
+                discussion.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="pim"
+                      name="pin"
+                      class="form-control"
+                      placeholder="Pincode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="postalAddress"
+                      name="postalAddress"
+                      class="form-control"
+                      placeholder="Postal Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
             </div>
           </div>
         </div>
