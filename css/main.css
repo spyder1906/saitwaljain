@@ -880,8 +880,8 @@ button {
   font-size: 22px;
 }
 .profile-wrap .profile {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   margin-bottom: 20px;
   border-radius: 50%;
 }
@@ -908,7 +908,7 @@ button {
    ========================================================================== */
 .campaigns-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://cdn.pixabay.com/photo/2021/08/30/01/41/koyasan-6584637_960_720.jpg);
+    url(/img/Gallery/Gallery/Images/Events/IMG-20230409-WA0056.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -987,9 +987,11 @@ button {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  height: -webkit-fill-available;
 }
 .video-wrap img {
   width: 100%;
+  height: -webkit-fill-available;
 }
 .video-wrap .play {
   background-color: rgba(0, 0, 0, 0.2);
@@ -1334,7 +1336,7 @@ button {
    ========================================================================== */
 .pager-header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/tw.jpg);
+    url(/img/Gallery/Gallery/Images/Events/IMG-20230409-WA0056.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
