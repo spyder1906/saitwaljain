@@ -873,17 +873,16 @@ button {
 .profile-wrap {
   background-color: #fafafa;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   border: 2px dashed #ddd;
 }
 .profile-wrap h3 {
   font-size: 22px;
 }
 .profile-wrap .profile {
-  width: 160px;
-  height: 160px;
+  width: 300px;
+  height: 320px;
   margin-bottom: 20px;
-  border-radius: 50%;
 }
 
 .profile-wrap span {
@@ -1267,9 +1266,9 @@ button {
 }
 .widget-content {
 }
-.widget-content img {
+/* .widget-content img {
   margin-bottom: 15px;
-}
+} */
 .widget-content p {
   color: #999;
 }
