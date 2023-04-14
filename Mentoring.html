@@ -174,75 +174,26 @@
     <div class="pager-header">
       <div class="container">
         <div class="page-content">
-          <h2>Platform Saitwal</h2>
+          <h2>Mentoring</h2>
           <!-- <p>
             Help today because tomorrow you may be the one who <br />needs more
             helping!
           </p> -->
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Platform</li>
+            <li class="breadcrumb-item active">Mentoring</li>
           </ol>
         </div>
       </div>
     </div>
     <!-- /Page Header -->
 
-    <section id="history-section">
+    <section class="contact-section padding" id="Mentoring">
       <div class="container">
-        <div class="row py-5">
-          <div class="col-md-12">
-            <div class="about-content">
-              <h2>Jain Muni & Mataji Sangh Vihar information</h2>
-              <h3 class="mt-5">Vihar:</h3>
-              <p>
-                Jain Muni and Mataji always walk with bare feet. When they
-                travel from one place to another, whatever may be the distance
-                they always go walking. They do not use any vehicle like bullock
-                cart, car, boat, ship or plane for traveling. Whether it is cold
-                weather or scorching sun; whether the road is stony or thorny;
-                whether it is the burning sand of a desert or a burning road,
-                they do not wear any foot-wear at any time. They move about on
-                bare foot all their life. The reason for not wearing shoes is
-                while walking, they can avoid crushing the bugs or insects on
-                the ground. While going places, they preach the religion
-                (Dharma), and provide proper spiritual guidance to people. They
-                do not stay more than a few days in any one place except during
-                the rainy season which is about four months in duration i.e.,
-                Chaturmas or Chaumasa.
-              </p>
-              <p>
-                Please see the latest information about Vihar in the following
-                link:
-              </p>
-              Vihar - Chaturmas- Information of Digambar Jain Muni Sangh -
-              <a href="https://digjainwiki.org/vihar/" target="_blank">
-                DigJainWiki
-              </a>
-              <h3 class="mt-5">Jain Tirthsketra Information -Dharmashala:</h3>
-              <p>
-                Please visit the following resource to view the temple
-                directory. We are building the contact list city wise:
-              </p>
-              All India Jain Digambar Temple Directory -
-              <a
-                href="https://digjainwiki.org/all-india-jain-digambar-temple-directory/"
-                target="_blank"
-              >
-                DigJainWiki
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="history-section">
-      <div class="container">
-        <div class="row py-3">
-          <div class="col-md-12">
-            <div class="about-content">
-              <h2>Employment support</h2>
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding">
+            <div class="contact-info mt-4">
+              <h3>Mentoring</h3>
               <p>
                 At our organization, we recognize that education is the
                 foundation for success, and we are committed to providing our
@@ -261,6 +212,11 @@
                 to pursue those paths.
               </p>
               <p>
+                Our program is open to all members of the community, regardless
+                of age. Whether you are a seasoned artist or a beginner, we
+                welcome you to join us and explore your creativity.
+              </p>
+              <p>
                 We offer a range of services and resources, including workshops
                 on resume writing, job searching, and interviewing skills, as
                 well as one-on-one career counseling sessions. Our goal is to
@@ -272,6 +228,117 @@
                 achieve their professional goals, and we are committed to
                 helping our community members do just that.
               </p>
+            </div>
+          </div>
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <h3>Job Seekers</h3>
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="pim"
+                      name="pin"
+                      class="form-control"
+                      placeholder="Pincode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="postalAddress"
+                      name="postalAddress"
+                      class="form-control"
+                      placeholder="Postal Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
             </div>
           </div>
         </div>
