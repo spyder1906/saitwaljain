@@ -171,23 +171,144 @@
 
     <div class="header-height"></div>
 
-    <section class="error-section padding">
+    <div class="pager-header">
       <div class="container">
-        <div class="error-content text-center">
-          <h2>404!</h2>
-          <h5>Oops! Page Not Found</h5>
-          <p>The page you were looking for could not be found.</p>
-          <a href="index.html" class="default-btn">Back to Home</a>
+        <div class="page-content">
+          <h2>Entrepreneurs</h2>
+          <!-- <p>
+            Help today because tomorrow you may be the one who <br />needs more
+            helping!
+          </p> -->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Entrepreneurs</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <!-- /Page Header -->
+
+    <section class="contact-section padding" id="Entrepreneurs">
+      <div class="container">
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding pt-4">
+            <div class="contact-form">
+              <h3>For Entrepreneurs</h3>
+              <p>
+                If you are looking for any specific programs, please fill in the
+                form.
+              </p>
+              <p>What help you need</p>
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="pim"
+                      name="pin"
+                      class="form-control"
+                      placeholder="Pincode"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      id="postalAddress"
+                      name="postalAddress"
+                      class="form-control"
+                      placeholder="Postal Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="number"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- /Error Section -->
 
     <section class="widget-section padding">
       <div class="container">
         <div class="widget-wrap row">
           <div class="col-md-4 xs-padding">
             <div class="widget-content">
+              <img
+                src="img/saitwal_footer_logo.png"
+                alt="logo"
+                width="130px"
+                style="margin-left: -38px; margin-top: -20px"
+              />
               <p>
                 "Join us in our mission to work for the benefit of our inner
                 selves and our community."
