@@ -192,6 +192,93 @@
     </div>
     <!-- /Page Header -->
 
+    <section class="contact-section padding">
+      <!-- /#google_map -->
+      <div class="container">
+        <div class="row contact-wrap mt-0">
+          <div class="col-md-12 xs-padding">
+            <div class="contact-form">
+              <form
+                action="contact.php"
+                method="post"
+                id="ajax_form"
+                class="form-horizontal"
+              >
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6 mb-4">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6 mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Contact Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-12 mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Address"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6 mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Occupation "
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Contact Section -->
+
     <section class="widget-section padding">
       <div class="container">
         <div class="widget-wrap row">

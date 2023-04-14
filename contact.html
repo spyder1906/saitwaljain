@@ -192,7 +192,7 @@
     </div>
     <!-- /Page Header -->
 
-    <section class="contact-section padding">
+    <section class="contact-section padding pt-0">
       <div id="google_map"></div>
       <!-- /#google_map -->
       <div class="container">
@@ -452,7 +452,7 @@
         function init() {
           var mapOptions = {
             zoom: 11,
-            center: new google.maps.LatLng(40.67, -73.94),
+            center: new google.maps.LatLng(21.1388599, 79.1131567),
             scrollwheel: false,
             navigationControl: false,
             mapTypeControl: false,
@@ -534,7 +534,7 @@
           var map = new google.maps.Map(mapElement, mapOptions);
 
           var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(40.67, -73.94),
+            position: new google.maps.LatLng(21.1388599, 79.1131567),
             map: map,
             title: "Location!",
           });
