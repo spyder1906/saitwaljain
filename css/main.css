@@ -880,9 +880,8 @@ button {
   font-size: 22px;
 }
 .profile-wrap .profile {
-  width: 300px;
+  width: 320px;
   height: 320px;
-  margin-bottom: 20px;
 }
 
 .profile-wrap span {
@@ -897,6 +896,12 @@ button {
   width: 100%;
   border-radius: 5px;
 }
+
+.platform-image img {
+  width: 80%;
+  height: 500px;
+  border-radius: 5px;
+}
 .about-content h2 {
   font-size: 42px;
   margin-bottom: 20px;
@@ -907,7 +912,7 @@ button {
    ========================================================================== */
 .campaigns-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/Gallery/Gallery/Images/Events/IMG-20230409-WA0056.jpg);
+    url(/img/Gallery/Gallery/Images/IMG-20230319-WA0008.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -1096,13 +1101,13 @@ button {
    ========================================================================== */
 .counter-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://cdn.pixabay.com/photo/2014/01/14/06/19/manas-mandir-244142_960_720.jpg);
+    url(../img/Gallery/Gallery/Images/Events/WhatsApp\ Image\ 2023-04-09\ at\ 23.44.12.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
-  padding: 150px 0;
+  padding: 170px 0;
 }
 .counters {
 }
@@ -1336,12 +1341,12 @@ button {
 .pager-header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/img/Gallery/Gallery/Images/Events/IMG-20230409-WA0056.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  min-height: 300px;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-position: center !important;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  min-height: 400px;
   display: flex;
   align-items: center;
 }
