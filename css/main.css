@@ -434,7 +434,7 @@ button {
 /*Top Header*/
 .top-header {
   /* background-color:#FFAA33; */
-  background-color: #FFAA33;
+  background-color: #7b57ffd7;
   padding: 10px 0;
 }
 .top-content-wrap ul li {
@@ -445,6 +445,7 @@ button {
   display: inline-block;
   color: #fff;
   font-size: 15px;
+  font-weight: 700
 }
 .top-content-wrap ul li i {
   color: #fff;
