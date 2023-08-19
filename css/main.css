@@ -2335,3 +2335,9 @@ span.date {
 
 /* //////// --------------- //////////// */
 /* //////// Third-Party CSS //////////// */
+
+@media (max-width: 575px) {
+  .profile {
+    width: 280px;
+  }
+}
