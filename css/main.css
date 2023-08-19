@@ -434,7 +434,7 @@ button {
 /*Top Header*/
 .top-header {
   /* background-color:#FFAA33; */
-  background-color: #FFAA33;
+  background-color: #7b57ffd7;
   padding: 10px 0;
 }
 .top-content-wrap ul li {
@@ -445,6 +445,7 @@ button {
   display: inline-block;
   color: #fff;
   font-size: 15px;
+  font-weight: 700
 }
 .top-content-wrap ul li i {
   color: #fff;
@@ -1266,7 +1267,7 @@ button {
    ========================================================================== */
 .widget-section {
   background-color: #222;
-  background-image: url(../img/map.png);
+  /* background-image: url(../img/map.png); */
   background-position: right 150px center;
   background-repeat: no-repeat;
   width: 100%;
@@ -2162,4 +2163,181 @@ span.date {
   font-size: 25px;
   font-weight: 600;
   color: #222;
+}
+
+/* //////// Third-Party CSS //////////// */
+/* //////// --------------- //////////// */
+
+.h1-text{
+    font-size: 1.3rem;
+    margin: 40px 0;
+    color: #2c2c2c;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-text i{
+    background-color: #509bfc;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 5px 30px rgba(80, 123, 252, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0 20px;
+}
+
+ /* .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}  */
+.center-box {
+  display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.flex {
+  display: flex;
+}
+
+.dark-section {
+  background: #17b667;
+  padding: 10px 30px;
+  border-radius: 1.5rem;
+  max-width: max-content;
+  margin: 3rem auto;
+}
+
+.dark-section h3{
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row.box-section{
+  position: relative;
+  /* min-width: 250px; */
+  background: linear-gradient(45deg, rgba(19,241,252,1) 0%, rgba(4,112,220,1) 100%);;
+  box-shadow: 2px 3px 30px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.box{
+    position: relative;
+    min-width: 280px;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.box.bg-2 {
+  background-color: #ecd7d7b1;
+}
+
+.top-bar{
+    width: 50%;
+    height: 4px;
+    background: #507bfc;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.top-bar-green{
+  width: 50%;
+  height: 4px;
+  background: #17b667;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    width: 100%;
+}
+
+.fa-check-circle{
+    color: #17b667;
+}
+
+.box .box-footer {
+  margin-top: 0.5rem;
+  border-top: 1px solid #8d8b8b58;
+  padding-top: 0.5rem;
+  width: 100%;
+  text-align: center;
+  
+}
+.box-footer p {
+  padding: 0px;
+  margin: 5px 0px;
+  font-size: 1.1rem;
+}
+.content img{
+    width: 150px;
+    height: 150px;
+    border-radius:100px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content strong{
+    font-weight: 700;
+    color: #141414;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.content p{
+    font-size: 1.1rem;
+    /* color: #7a7a7a; */
+    text-align: center;
+    color: #17b667;
+    margin: 5px 0px 5px 0px;
+}
+
+
+/* //////// --------------- //////////// */
+/* //////// Third-Party CSS //////////// */
+
+@media (max-width: 575px) {
+  .profile {
+    width: 280px;
+  }
 }
