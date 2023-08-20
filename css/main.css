@@ -1352,7 +1352,7 @@ button {
   background-size: cover !important;
   min-height: 400px;
   display: flex;
-  align-items: center;
+  align-items: end;
 }
 .pager-header h2 {
   color: #fff;
