@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -186,7 +186,7 @@
                   <a href="media.html">Media</a>
                 </li>
                 <li><a href="member.html">Become a Member </a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <a href="#" class="ml-5"
                   ><img
                     src="img/LOGO/logo_2.jpg"
@@ -255,7 +255,7 @@
                 <div class="box-footer">
                   <p style="font-size: 1.2rem">
                     <i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
-                    Toronto, Canada
+                    Mumbai & Toronto
                   </p>
                   <p>
                     <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -325,15 +325,10 @@
               </ul>
             </div>
           </div>
-          <!-- <div class="col-md-6 xs-padding">
+          <div class="col-md-6 xs-padding">
             <div class="contact-form">
               <h3>Contact</h3>
-              <form
-                action="contact.php"
-                method="post"
-                id="ajax_form"
-                class="form-horizontal"
-              >
+              <form method="post" id="contact-form" action="sendmail.php">
                 <div class="form-group colum-row row">
                   <div class="col-sm-6">
                     <input
@@ -379,7 +374,7 @@
                 <div id="form-messages" class="alert" role="alert"></div>
               </form>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -458,9 +453,8 @@
                       <a href="member.html">Member</a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="contact.php">Contact</a>
                     </li>
-                    
                   </ul>
                 </div>
               </div>
@@ -547,7 +541,46 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGm_weV-pxqGWuW567g78KhUd7n0p97RY"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script>
+      const constraints = {
+        name: {
+          presence: { allowEmpty: false },
+        },
+        email: {
+          presence: { allowEmpty: false },
+          email: true,
+        },
+        message: {
+          presence: { allowEmpty: false },
+        },
+      };
 
+      const form = document.getElementById("contact-form");
+      form.addEventListener(
+        "submit",
+        function (event) {
+          const formValues = {
+            name: form.elements.name.value,
+            email: form.elements.email.value,
+            message: form.elements.message.value,
+          };
+
+          const errors = validate(formValues, constraints);
+          if (errors) {
+            event.preventDefault();
+            const errorMessage = Object.values(errors)
+              .map(function (fieldValues) {
+                return fieldValues.join(", ");
+              })
+              .join("\n");
+
+            alert(errorMessage);
+          }
+        },
+        false
+      );
+    </script>
     <script>
       (function ($) {
         "use strict";

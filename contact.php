@@ -1,3 +1,4 @@
+<?php include "sendmail.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -204,45 +205,191 @@
 
     <div class="header-height"></div>
 
-    <div class="pager-header">
+    <div
+      class="pager-header"
+      style="
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(/img/Gallery/Gallery/Images/old_pic.jpeg);
+      "
+    >
       <div class="container">
         <div class="page-content">
-          <h2>External Jain Resources</h2>
-          <!-- <p>
-            Help today because tomorrow you may be the one who <br />needs more
-            helping!
-          </p> -->
+          <h2>Contact With Us</h2>
+          <p>
+            Join us in our mission to work for the benifit of our innier selves
+            and our community
+          </p>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">External Jain Resources</li>
+            <li class="breadcrumb-item active">Contact</li>
           </ol>
         </div>
       </div>
     </div>
     <!-- /Page Header -->
 
-    <section id="history-section">
+    <section class="contact-section padding pt-0">
+      <!-- <div id="google_map"></div> -->
+      <div class="container mt-5 pt-5">
+        <div class="row center-box">
+          <div class="col-sm-12 col-md-6 mb-4">
+            <div class="container">
+              <div class="box">
+                <div class="top-bar"></div>
+                <!-- <div class="top">
+                </div> -->
+                <div class="mt-2 content">
+                  <img
+                    src="img/comittee/Prakshal_Gheware.jpeg"
+                    alt=""
+                    style="width: 200px; height: 200px"
+                  />
+                  <strong style="font-size: 2rem" class="mt-3"
+                    >Prakshal Gheware</strong
+                  >
+                  <!-- <p style="font-size: 1.5rem" class="mt-3">President</p> -->
+                </div>
+                <div class="box-footer">
+                  <p style="font-size: 1.2rem">
+                    <i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+                    Mumbai & Toronto
+                  </p>
+                  <p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    contact@saitwaljain.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-4">
+            <div class="container">
+              <div class="box">
+                <div class="top-bar"></div>
+                <!-- <div class="top">
+                </div> -->
+                <div class="mt-2 content">
+                  <img
+                    src="img/ritika.jpg"
+                    alt=""
+                    style="width: 200px; height: 200px"
+                  />
+                  <strong style="font-size: 2rem" class="mt-3"
+                    >Ritika Jain</strong
+                  >
+                  <!-- <p style="font-size: 1.5rem" class="mt-3">President</p> -->
+                </div>
+                <div class="box-footer">
+                  <p style="font-size: 1.2rem">
+                    <i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+                    Toronto, Canada
+                  </p>
+                  <p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    ritikaofficial.jain@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#google_map -->
       <div class="container">
-        <div class="row py-5">
-          <div class="col-md-12">
-            <div class="about-content">
-              <h3 class="mt-5">Jain Tirthsketra Information -Dharmashala:</h3>
+        <div class="row contact-wrap">
+          <div class="col-md-6 xs-padding">
+            <div class="contact-info">
+              <h3>Get in touch:</h3>
+              <p>Do you have any questions?</p>
               <p>
-                Please visit the following resource to view the temple
-                directory. We are building the contact list city wise:
+                Fill up the form provided with your query and our team will
+                contact you.
               </p>
-              All India Jain Temple Directory -
-              <a
-                href="https://en.wikipedia.org/wiki/List_of_Jain_temples"
-                target="_blank"
-              >
-                Click here
-              </a>
+              <ul>
+                <li>
+                  <i class="ti-location-pin"></i> Chaitanya Plot Number 25,
+                  Srinagar, Thane (West) 400 604
+                </li>
+                <li></li>
+                <li>
+                  <i class="ti-location-pin"></i> Saitwal Jain Sangathan Madal,
+                  Mahavir Nagar, Nagpur -24
+                </li>
+                <li>
+                  <!-- <i class="ti-mobile"></i> +1 212 425 8617, +1 212 425 8533 -->
+                </li>
+                <li><i class="ti-email"></i>contact@saitwaljain.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 xs-padding">
+            <div class="contact-form">
+              <h3>Contact</h3>
+              <form method="post" id="contact-form" action="sendmail.php">
+                <div class="form-group colum-row row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <button id="submit" class="default-btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+                <div id="form-messages" class="alert-success" role="alert">
+                  <?php if (isset($_GET['mailsent']) && intval($_GET['mailsent']) == 1 ) {
+                    echo '<p>Thank you for contacting us! We will get back to you soon.</p>';
+                    }
+                    ?>
+                </div>
+                <div id="form-messages" class="alert-danger" role="alert">
+                  <?php if (isset($_GET['mailsent']) && intval($_GET['mailsent']) == 0 ) {
+                    echo '<p>Oops, something went wrong. Please try again later!</p>';
+                    } ?>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- /Contact Section -->
 
     <section class="widget-section padding">
       <div class="container">
@@ -401,7 +548,151 @@
     <script src="js/vendor/wow.min.js"></script>
     <!-- Contact JS -->
     <script src="js/contact.js"></script>
+    <!-- Google Map JS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGm_weV-pxqGWuW567g78KhUd7n0p97RY"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script>
+      const constraints = {
+        name: {
+          presence: { allowEmpty: false },
+        },
+        email: {
+          presence: { allowEmpty: false },
+          email: true,
+        },
+        message: {
+          presence: { allowEmpty: false },
+        },
+      };
+
+      const form = document.getElementById("contact-form");
+      form.addEventListener(
+        "submit",
+        function (event) {
+          const formValues = {
+            name: form.elements.name.value,
+            email: form.elements.email.value,
+            message: form.elements.message.value,
+          };
+
+          const errors = validate(formValues, constraints);
+          if (errors) {
+            event.preventDefault();
+            const errorMessage = Object.values(errors)
+              .map(function (fieldValues) {
+                return fieldValues.join(", ");
+              })
+              .join("\n");
+
+            alert(errorMessage);
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      (function ($) {
+        "use strict";
+
+        /*=========================================================================
+            Google Map Settings
+        =========================================================================*/
+
+        google.maps.event.addDomListener(window, "load", init);
+
+        function init() {
+          var mapOptions = {
+            zoom: 11,
+            center: new google.maps.LatLng(21.1388599, 79.1131567),
+            scrollwheel: false,
+            navigationControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            draggable: false,
+            styles: [
+              {
+                featureType: "administrative",
+                elementType: "all",
+                stylers: [{ saturation: "-100" }],
+              },
+              {
+                featureType: "administrative.province",
+                elementType: "all",
+                stylers: [{ visibility: "off" }],
+              },
+              {
+                featureType: "landscape",
+                elementType: "all",
+                stylers: [
+                  { saturation: -100 },
+                  { lightness: 65 },
+                  { visibility: "on" },
+                ],
+              },
+              {
+                featureType: "poi",
+                elementType: "all",
+                stylers: [
+                  { saturation: -100 },
+                  { lightness: "50" },
+                  { visibility: "simplified" },
+                ],
+              },
+              {
+                featureType: "road",
+                elementType: "all",
+                stylers: [{ saturation: "-100" }],
+              },
+              {
+                featureType: "road.highway",
+                elementType: "all",
+                stylers: [{ visibility: "simplified" }],
+              },
+              {
+                featureType: "road.arterial",
+                elementType: "all",
+                stylers: [{ lightness: "30" }],
+              },
+              {
+                featureType: "road.local",
+                elementType: "all",
+                stylers: [{ lightness: "40" }],
+              },
+              {
+                featureType: "transit",
+                elementType: "all",
+                stylers: [{ saturation: -100 }, { visibility: "simplified" }],
+              },
+              {
+                featureType: "water",
+                elementType: "geometry",
+                stylers: [
+                  { hue: "#ffff00" },
+                  { lightness: -25 },
+                  { saturation: -97 },
+                ],
+              },
+              {
+                featureType: "water",
+                elementType: "labels",
+                stylers: [{ lightness: -25 }, { saturation: -100 }],
+              },
+            ],
+          };
+
+          var mapElement = document.getElementById("google_map");
+
+          var map = new google.maps.Map(mapElement, mapOptions);
+
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(21.1388599, 79.1131567),
+            map: map,
+            title: "Location!",
+          });
+        }
+      })(jQuery);
+    </script>
   </body>
 </html>
